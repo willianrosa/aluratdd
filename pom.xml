@@ -6,13 +6,18 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>aluratdd</name>
 	<description>learing more about tdd</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
-
 	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -41,8 +46,13 @@
 				<configuration>
 					<format>xml</format>
 					<maxmem>256m</maxmem>
-					<!-- aggregated reports for multi-module projects -->
 					<aggregate>true</aggregate>
+					<instrumentation>
+						<ignores>
+							<ignore>java.util.logging.*</ignore>
+						</ignores>
+					</instrumentation>
+					<check />
 				</configuration>
 			</plugin>
 		</plugins>
