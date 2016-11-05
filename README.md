@@ -1,4 +1,6 @@
-# aluratdd
+# aluratdd 
+
+[![Build Status](https://travis-ci.org/willianvieirarosa/aluratdd.svg?branch=master)](https://travis-ci.org/willianvieirarosa/aluratdd)
 
 Java 8, JUnit, Hamcrest, TDD and Test Data Builder
 The project is an project about tdd pratices.
